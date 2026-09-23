@@ -125,7 +125,7 @@ export const Hero: React.FC = () => {
             onMouseLeave={resetCursor}
           >
             <img
-              src="/assets/images/hero_portrait.jpg"
+              src="/assets/images/hero_portrait.png"
               alt={profileData.name}
               className="w-full h-full object-cover grayscale contrast-105 group-hover:grayscale-0 transition-all duration-700 ease-out"
             />

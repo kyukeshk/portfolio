@@ -81,7 +81,7 @@ export const AppContent: React.FC = () => {
         <Hero />
         <Statement />
         <About />
-        <Expertise />
+        {/* <Expertise /> */}
         <Software />
         <ContentCategories />
         <PresentationVideos
@@ -93,10 +93,10 @@ export const AppContent: React.FC = () => {
         <GraphicDesign />
         <BeforeAfter />
         <Process />
-        <SelectedWork
+        {/* <SelectedWork
           onOpenProject={handleOpenProject}
           onPlayVideo={handleOpenVideo}
-        />
+        /> */}
         <Showreel
           onPlayShowreel={() =>
             handleOpenVideo(showreelData.videoUrl, showreelData.title, '2026 Showreel')

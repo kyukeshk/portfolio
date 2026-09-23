@@ -2,42 +2,6 @@ import { SoftwareTool } from '../types/portfolio';
 
 export const softwareData: SoftwareTool[] = [
   {
-    id: "premiere",
-    name: "Adobe Premiere Pro",
-    shortName: "PR",
-    category: "Video Editing / Storytelling",
-    description: "Primary non-linear editor for long-form pacing, documentary assemblies, audio ducking, and multi-cam workflows.",
-    icon: "Film",
-    highlight: "Daily Driver for 5+ years"
-  },
-  {
-    id: "after-effects",
-    name: "Adobe After Effects",
-    shortName: "AE",
-    category: "Motion / VFX",
-    description: "Complex motion typography, tracking, rotoscoping, particle effects, and kinetic title sequences.",
-    icon: "Sparkles",
-    highlight: "Kinetic & 2.5D Animation"
-  },
-  {
-    id: "photoshop",
-    name: "Adobe Photoshop",
-    shortName: "PS",
-    category: "Compositing / Design",
-    description: "Thumbnail design, digital painting, texture manipulation, high-end photo retouching, and matte painting.",
-    icon: "Image",
-    highlight: "Editorial Graphics & Posters"
-  },
-  {
-    id: "illustrator",
-    name: "Adobe Illustrator",
-    shortName: "AI",
-    category: "Vector / Brand Art",
-    description: "Vector illustration, typographic mark design, iconography, and shape assets ready for motion rigging.",
-    icon: "PenTool",
-    highlight: "Logos & Custom Typography"
-  },
-  {
     id: "davinci",
     name: "DaVinci Resolve",
     shortName: "DR",

@@ -50,15 +50,5 @@ export const graphicDesignItems: GraphicDesignItem[] = [
     aspect: "portrait",
     description: "Editorial lookbook layout capturing behind-the-scenes craft and equipment.",
     client: "YK Studio"
-  },
-  {
-    id: "gd-06",
-    title: "PORTRAIT KEY ART",
-    category: "Social Media",
-    year: "2026",
-    image: "/assets/images/hero_portrait.jpg",
-    aspect: "portrait",
-    description: "Monochrome studio portrait with editorial metadata typography.",
-    client: "YK Editorial"
   }
 ];

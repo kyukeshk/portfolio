@@ -8,7 +8,7 @@ export const profileData: ProfileData = {
     lead: "I create visual experiences",
     highlight: "through editing, motion",
     tail: "and design.",
-    paragraph: "Hi, I'm Yash Kumar (YK), a visual editor specializing in high-impact video editing, motion graphics, and digital content creation with a refined editorial aesthetic."
+    paragraph: "Hi, I'm Yukesh (YK), a visual editor specializing in high-impact video editing, motion graphics, and digital content creation with a refined editorial aesthetic."
   },
   detailedBio: [
     "I specialize in transforming raw footage and creative ideas into engaging visual experiences. My work combines editing, motion, design, and storytelling.",
