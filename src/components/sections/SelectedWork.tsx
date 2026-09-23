@@ -3,6 +3,7 @@ import { selectedWorks } from '../../data/projects';
 import { Project } from '../../types/portfolio';
 import { useCursor } from '../../context/CursorContext';
 import { ArrowUpRight, Play } from 'lucide-react';
+import { getAssetUrl } from '../../utils/assets';
 
 interface SelectedWorkProps {
   onOpenProject: (project: Project) => void;
@@ -60,7 +61,7 @@ export const SelectedWork: React.FC<SelectedWorkProps> = ({
                 >
                   <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden border border-[#E5E5E0] bg-[#111111] shadow-2xl">
                     <img
-                      src={project.thumbnail}
+                      src={getAssetUrl(project.thumbnail)}
                       alt={project.title}
                       loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-95 group-hover:opacity-100"

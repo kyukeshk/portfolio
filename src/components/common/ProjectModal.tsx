@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Play } from 'lucide-react';
 import { Project } from '../../types/portfolio';
+import { getAssetUrl } from '../../utils/assets';
 
 interface ProjectModalProps {
   project: Project | null;
@@ -64,7 +65,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
             {/* Media Banner */}
             <div className="relative aspect-video w-full bg-black overflow-hidden group">
               <img
-                src={project.thumbnail}
+                src={getAssetUrl(project.thumbnail)}
                 alt={project.title}
                 className="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
               />

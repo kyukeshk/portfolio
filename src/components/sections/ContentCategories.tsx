@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDownRight } from 'lucide-react';
 import { useCursor } from '../../context/CursorContext';
+import { getAssetUrl } from '../../utils/assets';
 
 interface CategoryItem {
   number: string;
@@ -145,7 +146,7 @@ export const ContentCategories: React.FC = () => {
           <div className="lg:col-span-6 relative min-h-[400px] lg:min-h-full rounded-lg overflow-hidden border border-[#E5E5E0] bg-black shadow-xl">
             <motion.img
               key={activeIndex}
-              src={categories[activeIndex].image}
+              src={getAssetUrl(categories[activeIndex].image)}
               alt={categories[activeIndex].title}
               initial={{ opacity: 0, scale: 1.08 }}
               animate={{ opacity: 1, scale: 1 }}

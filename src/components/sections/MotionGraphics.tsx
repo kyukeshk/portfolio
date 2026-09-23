@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motionGraphicsProjects } from '../../data/projects';
 import { Play, Pause, Maximize2 } from 'lucide-react';
+import { getAssetUrl } from '../../utils/assets';
 
 interface MotionGraphicsProps {
   onSelectVideo: (videoUrl: string, title: string, category: string) => void;
@@ -62,8 +63,8 @@ const MotionItem: React.FC<{
       <div className="relative aspect-video w-full bg-black overflow-hidden">
         <video
           ref={videoRef}
-          src={project.videoUrl}
-          poster={project.thumbnail}
+          src={getAssetUrl(project.videoUrl)}
+          poster={getAssetUrl(project.thumbnail)}
           loop
           muted
           playsInline

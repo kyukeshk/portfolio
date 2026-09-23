@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { profileData } from '../../data/profile';
 import { useCursor } from '../../context/CursorContext';
+import { getAssetUrl } from '../../utils/assets';
 
 export const Hero: React.FC = () => {
   const { setCursor, resetCursor } = useCursor();
@@ -125,7 +126,7 @@ export const Hero: React.FC = () => {
             onMouseLeave={resetCursor}
           >
             <img
-              src="/assets/images/hero_portrait.png"
+              src={getAssetUrl('/assets/images/hero_portrait.png')}
               alt={profileData.name}
               className="w-full h-full object-cover grayscale contrast-105 group-hover:grayscale-0 transition-all duration-700 ease-out"
             />

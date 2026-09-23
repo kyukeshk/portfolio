@@ -3,6 +3,7 @@ import { presentationVideos } from '../../data/projects';
 import { Project } from '../../types/portfolio';
 import { Play } from 'lucide-react';
 import { useCursor } from '../../context/CursorContext';
+import { getAssetUrl } from '../../utils/assets';
 
 interface PresentationVideosProps {
   onSelectVideo: (videoUrl: string, title: string, category: string) => void;
@@ -55,7 +56,7 @@ export const PresentationVideos: React.FC<PresentationVideosProps> = ({
               {/* Thumbnail Container */}
               <div className="relative aspect-video w-full rounded-lg overflow-hidden border border-[#E5E5E0] bg-[#111111] shadow-md">
                 <img
-                  src={project.thumbnail}
+                  src={getAssetUrl(project.thumbnail)}
                   alt={project.title}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-90 group-hover:opacity-100"

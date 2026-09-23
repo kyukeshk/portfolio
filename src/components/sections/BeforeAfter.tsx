@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from 'react';
 import { beforeAfterData } from '../../data/beforeAfter';
 import { useCursor } from '../../context/CursorContext';
 import { MoveHorizontal } from 'lucide-react';
+import { getAssetUrl } from '../../utils/assets';
 
 export const BeforeAfter: React.FC = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -75,7 +76,7 @@ export const BeforeAfter: React.FC = () => {
         >
           {/* AFTER Image (Full Background) */}
           <img
-            src={beforeAfterData.afterImage}
+            src={getAssetUrl(beforeAfterData.afterImage)}
             alt={beforeAfterData.afterLabel}
             className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
@@ -86,7 +87,7 @@ export const BeforeAfter: React.FC = () => {
             style={{ width: `${sliderPosition}%` }}
           >
             <img
-              src={beforeAfterData.beforeImage}
+              src={getAssetUrl(beforeAfterData.beforeImage)}
               alt={beforeAfterData.beforeLabel}
               className="absolute inset-0 w-full h-full object-cover pointer-events-none max-w-none"
               style={{

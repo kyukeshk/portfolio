@@ -3,6 +3,7 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { skillsData } from '../../data/skills';
 import { SkillItem } from '../../types/portfolio';
 import { ArrowUpRight } from 'lucide-react';
+import { getAssetUrl } from '../../utils/assets';
 
 export const Expertise: React.FC = () => {
   const [activeSkill, setActiveSkill] = useState<SkillItem | null>(null);
@@ -118,7 +119,7 @@ export const Expertise: React.FC = () => {
           className="pointer-events-none absolute z-40 hidden lg:block -translate-x-1/2 -translate-y-1/2 w-64 h-40 rounded-lg overflow-hidden shadow-2xl border-2 border-white bg-black"
         >
           <img
-            src={activeSkill.previewMedia}
+            src={getAssetUrl(activeSkill.previewMedia)}
             alt={activeSkill.title}
             className="w-full h-full object-cover"
           />

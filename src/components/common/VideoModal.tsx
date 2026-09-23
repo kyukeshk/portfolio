@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import { getAssetUrl } from '../../utils/assets';
 
 interface VideoModalProps {
   isOpen: boolean;
@@ -80,7 +81,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({
             onClick={(e) => e.stopPropagation()}
           >
             <video
-              src={videoUrl}
+              src={getAssetUrl(videoUrl)}
               controls
               autoPlay
               playsInline

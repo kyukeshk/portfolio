@@ -4,6 +4,7 @@ import { GraphicDesignItem } from '../../types/portfolio';
 import { useCursor } from '../../context/CursorContext';
 import { X, ZoomIn } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getAssetUrl } from '../../utils/assets';
 
 export const GraphicDesign: React.FC = () => {
   const [activeItem, setActiveItem] = useState<GraphicDesignItem | null>(null);
@@ -57,7 +58,7 @@ export const GraphicDesign: React.FC = () => {
                   }`}
                 >
                   <img
-                    src={item.image}
+                    src={getAssetUrl(item.image)}
                     alt={item.title}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -114,7 +115,7 @@ export const GraphicDesign: React.FC = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={activeItem.image}
+                src={getAssetUrl(activeItem.image)}
                 alt={activeItem.title}
                 className="max-h-[70vh] w-auto object-contain"
               />

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { profileData } from '../../data/profile';
 import { useCursor } from '../../context/CursorContext';
+import { getAssetUrl } from '../../utils/assets';
 
 interface CounterProps {
   target: number;
@@ -76,7 +77,7 @@ export const About: React.FC = () => {
           >
             <div className="relative aspect-[3/4] w-full rounded-lg overflow-hidden border border-[#E5E5E0] bg-[#F7F7F5] shadow-lg group">
               <img
-                src="/assets/images/hero_portrait.png"
+                src={getAssetUrl('/assets/images/hero_portrait.png')}
                 alt="YK in the studio"
                 className="w-full h-full object-cover grayscale contrast-110 group-hover:grayscale-0 transition-all duration-700 ease-out"
               />

@@ -2,6 +2,7 @@ import React from 'react';
 import { showreelData } from '../../data/projects';
 import { Play } from 'lucide-react';
 import { useCursor } from '../../context/CursorContext';
+import { getAssetUrl } from '../../utils/assets';
 
 interface ShowreelProps {
   onPlayShowreel: () => void;
@@ -38,7 +39,7 @@ export const Showreel: React.FC<ShowreelProps> = ({ onPlayShowreel }) => {
           className="group relative aspect-[16/9] w-full rounded-2xl overflow-hidden border border-[#E5E5E0] bg-black shadow-2xl cursor-pointer"
         >
           <img
-            src={showreelData.poster}
+            src={getAssetUrl(showreelData.poster)}
             alt="Showreel preview"
             className="w-full h-full object-cover opacity-80 group-hover:opacity-95 transition-all duration-700 ease-out group-hover:scale-105"
           />

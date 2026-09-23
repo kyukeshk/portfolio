@@ -2,6 +2,7 @@ import React from 'react';
 import { reelsData } from '../../data/projects';
 import { Play, Eye } from 'lucide-react';
 import { useCursor } from '../../context/CursorContext';
+import { getAssetUrl } from '../../utils/assets';
 
 interface ReelsProps {
   onSelectVideo: (videoUrl: string, title: string, category: string) => void;
@@ -55,7 +56,7 @@ export const Reels: React.FC<ReelsProps> = ({ onSelectVideo }) => {
               {/* Vertical 9:16 Container */}
               <div className="relative aspect-[9/16] w-full rounded-xl overflow-hidden border border-[#E5E5E0] bg-black shadow-xl">
                 <img
-                  src={reel.thumbnail}
+                  src={getAssetUrl(reel.thumbnail)}
                   alt={reel.title}
                   loading="lazy"
                   className="w-full h-full object-cover opacity-90 transition-transform duration-700 ease-out group-hover:scale-105"
