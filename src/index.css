@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #F7F7F5;
+  --bg-secondary: #FFFFFF;
+  --text-main: #111111;
+  --text-secondary: #666666;
+  --accent: #C65B5B;
+  --border-color: #E5E5E0;
+}
+
+@layer base {
+  html {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Editorial Headings */
+  h1, h2, h3, .font-display {
+    font-family: 'Syne', sans-serif;
+    letter-spacing: -0.03em;
+  }
+
+  .font-editorial {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-mono {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+/* Subtle Film Grain Noise Overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.45;
+  background-image: url('/noise.svg');
+  background-repeat: repeat;
+}
+
+/* Thin architectural grid lines */
+.editorial-border {
+  border-color: var(--border-color);
+}
+
+.editorial-border-b {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.editorial-border-t {
+  border-top: 1px solid var(--border-color);
+}
+
+.editorial-border-r {
+  border-right: 1px solid var(--border-color);
+}
+
+.editorial-border-l {
+  border-left: 1px solid var(--border-color);
+}
+
+/* Hide default cursor on desktop when custom cursor is active */
+@media (hover: hover) and (pointer: fine) {
+  body.custom-cursor-active,
+  body.custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F7F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D8D2;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C65B5B;
+}
+
+/* Text outline utility */
+.text-stroke-dark {
+  -webkit-text-stroke: 1px rgba(17, 17, 17, 0.25);
+  color: transparent;
+}
+
+.text-stroke-accent {
+  -webkit-text-stroke: 1px #C65B5B;
+  color: transparent;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}

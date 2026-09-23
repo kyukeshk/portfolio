@@ -1,0 +1,1172 @@
+Build a premium, highly interactive SINGLE-PAGE portfolio website for a
+professional Video Editor / Motion Designer / Graphic Designer.
+
+IMPORTANT:
+
+This is NOT a dashboard.
+This is NOT a SaaS application.
+This is NOT a traditional resume website.
+
+This is a visual storytelling website where the visitor scrolls through
+the editor's story and gradually discovers:
+
+1. Who the editor is
+2. What he does
+3. His experience and expertise
+4. The software/tools he uses
+5. The type of content he creates
+6. His creative work
+7. His best reels and videos
+8. His graphic design work
+9. How to contact him
+
+The entire experience should feel like an interactive digital portfolio
+created by a creative professional.
+
+--------------------------------------------------
+TECHNOLOGY
+--------------------------------------------------
+
+Use:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- GSAP where necessary
+- Lenis for smooth scrolling
+
+NO BACKEND.
+
+NO DATABASE.
+
+NO API.
+
+NO AUTHENTICATION.
+
+NO SERVER-SIDE DATA.
+
+Everything must be handled using static local data.
+
+All portfolio information should be easy to modify from local files.
+
+Example:
+
+src/
+  assets/
+    images/
+    videos/
+  data/
+    projects.ts
+    skills.ts
+    software.ts
+  components/
+  sections/
+
+The website must run entirely as a static frontend.
+
+--------------------------------------------------
+CORE DESIGN IDEA
+--------------------------------------------------
+
+The entire website should feel like one continuous visual journey.
+
+Do NOT make every section look like a separate website section.
+
+The sections should visually flow into one another.
+
+The user should feel:
+
+"First I meet the editor,
+then I learn who he is,
+then I understand what he does,
+then I discover his creative work."
+
+The website should have strong visual continuity.
+
+--------------------------------------------------
+VISUAL STYLE
+--------------------------------------------------
+
+Use a LIGHT THEME.
+
+Main background:
+
+#F7F7F5
+
+Secondary background:
+
+#FFFFFF
+
+Primary text:
+
+#111111
+
+Secondary text:
+
+#666666
+
+Accent:
+
+Muted coral / muted red
+
+Example:
+
+#C65B5B
+
+Use:
+
+- Large typography
+- Editorial layouts
+- Large whitespace
+- Thin borders
+- Minimal shadows
+- Subtle grain/noise
+- Asymmetric layouts
+- Large photography
+- Video previews
+- Editorial metadata
+
+The overall aesthetic should feel:
+
+EDITORIAL
+CREATIVE
+PREMIUM
+MINIMAL
+CINEMATIC
+MODERN
+
+Do NOT use the dark theme from the reference images.
+
+The reference images are only inspiration for the content structure,
+not something to copy visually.
+
+--------------------------------------------------
+SMOOTH SCROLL
+--------------------------------------------------
+
+Use Lenis for smooth scrolling.
+
+Scrolling should feel very smooth and cinematic.
+
+Use GSAP/Framer Motion for scroll-triggered animations.
+
+Avoid excessive animation.
+
+Animations should feel intentional and premium.
+
+--------------------------------------------------
+CUSTOM CURSOR
+--------------------------------------------------
+
+Create a custom desktop cursor.
+
+Default:
+
+Small black circle.
+
+Hover over normal content:
+
+Small circle.
+
+Hover over project:
+
+Cursor expands into:
+
+VIEW PROJECT →
+
+Hover over video:
+
+PLAY
+
+Hover over image:
+
+VIEW
+
+Hover over contact button:
+
+LET'S TALK
+
+Cursor movement should have smooth interpolation.
+
+Disable custom cursor on touch devices/mobile.
+
+--------------------------------------------------
+SECTION 01 — INTRO / HERO
+--------------------------------------------------
+
+The website should START with the editor's photograph.
+
+This is extremely important.
+
+Do NOT start with a generic text-only hero.
+
+The first thing the visitor should see is the editor.
+
+Create a fullscreen or near-fullscreen editorial hero.
+
+Layout:
+
+------------------------------------------------
+
+                    VIDEO EDITOR
+                  MOTION DESIGNER
+
+               [ EDITOR PHOTO ]
+
+               [ EDITOR NAME ]
+
+        "I turn ideas into visual stories."
+
+------------------------------------------------
+
+Use the editor's actual portrait.
+
+The portrait should be large and visually dominant.
+
+The image can be:
+
+- Cut out
+- Black and white
+- Slightly desaturated
+- Editorially cropped
+
+Add large typography behind or around the portrait.
+
+Example:
+
+VIDEO
+EDITOR
+
+or
+
+VISUAL
+STORYTELLER
+
+The typography should partially sit behind the portrait.
+
+Add small information around the image:
+
+VIDEO EDITOR
+MOTION DESIGNER
+GRAPHIC DESIGNER
+
+2026 PORTFOLIO
+
+INDIA
+
+--------------------------------------------------
+HERO ANIMATION
+--------------------------------------------------
+
+When the page loads:
+
+1. Background fades in
+2. Large typography reveals
+3. Portrait reveals using a mask
+4. Name slides into position
+5. Small metadata fades in
+6. Scroll indicator appears
+
+Do this sequentially.
+
+The hero should feel like an opening title sequence.
+
+--------------------------------------------------
+HERO MOUSE INTERACTION
+--------------------------------------------------
+
+On desktop:
+
+Move the mouse around the hero.
+
+The portrait should move slightly.
+
+The large background typography should move at a different speed.
+
+Small decorative elements should have subtle parallax.
+
+Do NOT make the effect exaggerated.
+
+It should feel like a premium interactive poster.
+
+--------------------------------------------------
+SCROLL INDICATOR
+--------------------------------------------------
+
+At the bottom:
+
+SCROLL TO EXPLORE
+
+↓
+
+Create an animated vertical line.
+
+When scrolling starts, the indicator disappears.
+
+--------------------------------------------------
+SECTION 02 — INTRODUCTION
+--------------------------------------------------
+
+After the hero, introduce the editor.
+
+Use a large editorial statement.
+
+Example:
+
+"I create visual experiences
+through editing, motion
+and design."
+
+Animate the sentence line by line.
+
+Some words should use the accent color.
+
+Then add a short paragraph:
+
+"Hi, I'm [NAME], a visual editor specializing in video editing,
+motion graphics and digital content creation."
+
+Keep this section spacious.
+
+--------------------------------------------------
+SECTION 03 — WHO IS HE?
+--------------------------------------------------
+
+Now transition into the editor's personal details.
+
+Layout:
+
+LEFT:
+
+Large portrait / secondary portrait
+
+RIGHT:
+
+HI, I'M [NAME]
+
+VIDEO EDITOR
+MOTION DESIGNER
+VISUAL STORYTELLER
+
+Biography.
+
+Example:
+
+"I specialize in transforming raw footage and creative ideas into
+engaging visual experiences. My work combines editing, motion,
+design and storytelling."
+
+Below the biography show key statistics:
+
+02+
+YEARS EXPERIENCE
+
+100+
+VIDEOS COMPLETED
+
+50+
+CREATIVE PROJECTS
+
+20+
+CLIENTS / BRANDS
+
+These numbers should be editable.
+
+Animate the numbers when they enter the viewport.
+
+--------------------------------------------------
+SECTION 04 — EXPERTISE
+--------------------------------------------------
+
+Create a large typography-driven expertise section.
+
+Heading:
+
+WHAT I DO
+
+Then display:
+
+VIDEO EDITING
+MOTION GRAPHICS
+GRAPHIC DESIGN
+COLOR GRADING
+SOCIAL MEDIA CONTENT
+VISUAL STORYTELLING
+
+Use large typography instead of cards.
+
+When hovering over each skill:
+
+- Text slightly scales
+- Accent line appears
+- Related image/video preview appears near cursor
+
+Example:
+
+Hover:
+
+VIDEO EDITING
+
+Cursor preview:
+
+small video thumbnail
+
+This section should demonstrate creativity.
+
+--------------------------------------------------
+SECTION 05 — SOFTWARE
+--------------------------------------------------
+
+Now introduce the tools used by the editor.
+
+Heading:
+
+TOOLS OF THE TRADE
+
+Show:
+
+Adobe Premiere Pro
+Adobe After Effects
+Adobe Photoshop
+Adobe Illustrator
+DaVinci Resolve
+Canva
+CapCut
+
+Do NOT use percentage bars.
+
+Instead create elegant interactive software rows.
+
+Example:
+
+PREMIERE PRO
+Video Editing / Storytelling
+
+AFTER EFFECTS
+Motion / VFX
+
+PHOTOSHOP
+Compositing / Design
+
+When hovering over a software item:
+
+- Icon appears larger
+- Description slides in
+- Accent line animates
+- Cursor changes
+
+Use actual software icons where possible.
+
+--------------------------------------------------
+SECTION 06 — CONTENT
+--------------------------------------------------
+
+Now transition from:
+
+"Who he is"
+
+to:
+
+"What he creates"
+
+Heading:
+
+CONTENT I CREATE
+
+Create four major categories:
+
+01
+PRESENTATION VIDEOS
+
+02
+MOTION GRAPHICS
+
+03
+SOCIAL MEDIA REELS
+
+04
+GRAPHIC DESIGN
+
+Each category should be visually represented.
+
+Do not immediately show every project.
+
+First create a large animated category introduction.
+
+Example:
+
+SOCIAL
+MEDIA
+REELS
+
+with a large vertical video preview.
+
+As the user scrolls, the category changes.
+
+--------------------------------------------------
+SECTION 07 — PRESENTATION VIDEOS
+--------------------------------------------------
+
+Create a presentation-video gallery.
+
+Use vertical videos where appropriate.
+
+Each project should show:
+
+Project number
+Project title
+Category
+Year
+Duration
+
+Example:
+
+01
+
+PRESENTATION VIDEO
+
+PROJECT NAME
+
+2026
+
+02:03
+
+Use video thumbnails/posters.
+
+Videos should NOT all autoplay.
+
+Use lazy loading.
+
+When the user hovers:
+
+PLAY
+
+When clicked:
+
+Open fullscreen video modal.
+
+--------------------------------------------------
+SECTION 08 — SOCIAL MEDIA REELS
+--------------------------------------------------
+
+Create a visually dynamic reels section.
+
+Use vertical 9:16 video cards.
+
+Instead of a boring grid, create an asymmetric layout.
+
+Example:
+
+          REEL 01
+
+      ┌─────────────┐
+      │             │
+      │    VIDEO    │
+      │             │
+      └─────────────┘
+
+                         REEL 02
+
+                   ┌─────────────┐
+                   │             │
+                   │    VIDEO    │
+                   │             │
+                   └─────────────┘
+
+             REEL 03
+
+Cards should appear at different vertical positions.
+
+On hover:
+
+- Image/video scales slightly
+- Card shifts
+- Play cursor appears
+
+On click:
+
+Open fullscreen video.
+
+--------------------------------------------------
+SECTION 09 — MOTION GRAPHICS
+--------------------------------------------------
+
+Create a dedicated motion graphics section.
+
+Use larger landscape/portrait video previews.
+
+Videos can autoplay silently ONLY when they enter the viewport.
+
+Use IntersectionObserver.
+
+Pause when they leave the viewport.
+
+Add subtle UI controls:
+
+PLAY
+PAUSE
+VIEW FULLSCREEN
+
+Do not autoplay every video at once.
+
+--------------------------------------------------
+SECTION 10 — GRAPHIC DESIGN
+--------------------------------------------------
+
+Create a visual gallery for graphic design.
+
+Include:
+
+Posters
+Event graphics
+Social media designs
+Brand graphics
+Photo manipulation
+Campaign artwork
+
+Use a masonry/editorial layout.
+
+Do not make every card identical.
+
+Some images should be:
+
+large
+small
+vertical
+horizontal
+overlapping
+
+Create a gallery that feels like a designer's physical moodboard.
+
+--------------------------------------------------
+SECTION 11 — BEFORE / AFTER
+--------------------------------------------------
+
+Create an interactive:
+
+RAW → FINAL
+
+section.
+
+Use a draggable comparison slider.
+
+Left:
+
+RAW FOOTAGE
+
+Right:
+
+FINAL EDIT
+
+The user can drag the divider.
+
+Use this for:
+
+Color grading
+Retouching
+Compositing
+VFX
+
+The interaction should feel smooth.
+
+--------------------------------------------------
+SECTION 12 — CREATIVE PROCESS
+--------------------------------------------------
+
+Show how the editor works.
+
+Heading:
+
+FROM IDEA
+TO FINAL CUT
+
+Create:
+
+01
+CONCEPT
+
+02
+PLAN
+
+03
+EDIT
+
+04
+DESIGN
+
+05
+REFINE
+
+06
+DELIVER
+
+Create a horizontal timeline on desktop.
+
+On mobile, convert it into a vertical timeline.
+
+As the user scrolls through the section:
+
+Each step activates.
+
+A connecting line progressively draws itself.
+
+--------------------------------------------------
+SECTION 13 — SELECTED WORK
+--------------------------------------------------
+
+Now show the BEST work.
+
+Heading:
+
+SELECTED WORK
+
+This should feel like the climax of the website.
+
+Use 5–8 of the strongest projects.
+
+Do not show everything.
+
+Each project should be visually large.
+
+Example:
+
+01
+BMW AUTOMOTIVE REEL
+
+[ LARGE VIDEO ]
+
+VIDEO EDITING
+COLOR GRADING
+
+2026
+
+Then:
+
+02
+MOTION CAMPAIGN
+
+[ LARGE VIDEO ]
+
+MOTION DESIGN
+AFTER EFFECTS
+
+2026
+
+Use different layouts for every project.
+
+--------------------------------------------------
+PROJECT INTERACTION
+--------------------------------------------------
+
+When hovering over a project:
+
+- Image follows cursor slightly
+- Project number moves
+- Title changes typography
+- Cursor becomes:
+
+VIEW →
+
+On click:
+
+Open a fullscreen project presentation.
+
+The project presentation can still be frontend-only.
+
+No backend required.
+
+Use local project data.
+
+--------------------------------------------------
+SECTION 14 — FAVORITE WORK / SHOWREEL
+--------------------------------------------------
+
+Create a final cinematic showreel section.
+
+Large heading:
+
+WATCH
+THE WORK.
+
+Place one large showreel video.
+
+When the user clicks:
+
+Fullscreen video player.
+
+Add subtle text:
+
+01:24
+
+SHOWREEL 2026
+
+--------------------------------------------------
+SECTION 15 — CONTACT
+--------------------------------------------------
+
+After showing all the work, finish with a strong CTA.
+
+Large typography:
+
+HAVE A STORY
+TO TELL?
+
+LET'S CREATE
+SOMETHING.
+
+Add:
+
+EMAIL
+INSTAGRAM
+BEHANCE
+YOUTUBE
+LINKEDIN
+
+Create a large magnetic button:
+
+START A PROJECT →
+
+When hovering:
+
+- Button expands
+- Arrow moves
+- Background changes to accent color
+- Cursor changes to LET'S TALK
+
+--------------------------------------------------
+SECTION 16 — FOOTER
+--------------------------------------------------
+
+Keep footer minimal.
+
+[NAME]
+
+VIDEO EDITOR
+MOTION DESIGNER
+
+Instagram
+Behance
+YouTube
+Email
+
+© 2026 [NAME]
+
+--------------------------------------------------
+ANIMATION SYSTEM
+--------------------------------------------------
+
+The website should contain lots of animation,
+but animation must never make the site difficult to use.
+
+Use:
+
+- Scroll reveal
+- Text splitting
+- Mask reveals
+- Image reveals
+- Parallax
+- Magnetic buttons
+- Cursor interactions
+- Hover previews
+- Video hover effects
+- Number counters
+- Horizontal scrolling
+- Clip-path transitions
+- Scale transitions
+- Smooth page loading
+- Section transitions
+
+Use spring-like or smooth easing.
+
+Avoid:
+
+- Constant bouncing
+- Excessive spinning
+- Random animations
+- Too many gradients
+- Overly aggressive parallax
+
+The website should feel:
+
+SMOOTH
+PREMIUM
+CINEMATIC
+CONTROLLED
+
+--------------------------------------------------
+BACKGROUND / VISUAL DETAILS
+--------------------------------------------------
+
+Use a very subtle off-white paper/noise texture.
+
+Add occasional:
+
+- Thin lines
+- Small numbers
+- Editorial labels
+- Tiny metadata
+- Minimal geometric shapes
+
+These elements should move slightly during scrolling.
+
+Example:
+
+01 / 06
+SELECTED WORK
+
+2026 PORTFOLIO
+
+VIDEO / MOTION / DESIGN
+
+--------------------------------------------------
+PAGE TRANSITIONS
+--------------------------------------------------
+
+Although this is a single-page website,
+create smooth transitions between sections.
+
+Sections should not simply appear one after another.
+
+Use:
+
+- Clip masks
+- Scale
+- Fade
+- Parallax
+- Text movement
+
+to make the entire page feel connected.
+
+--------------------------------------------------
+RESPONSIVE DESIGN
+--------------------------------------------------
+
+Desktop:
+
+Large editorial layouts
+Custom cursor
+Large typography
+Complex animations
+
+Tablet:
+
+Simplified layouts
+Reduced animation complexity
+
+Mobile:
+
+Single column
+Touch-friendly interactions
+No custom cursor
+Vertical video layouts
+Horizontal category navigation
+Reduced parallax
+
+Do not simply shrink desktop.
+
+Design mobile intentionally.
+
+--------------------------------------------------
+PERFORMANCE
+--------------------------------------------------
+
+This portfolio will contain many images and videos.
+
+Performance is extremely important.
+
+Implement:
+
+- Lazy loading images
+- Lazy loading videos
+- IntersectionObserver
+- Poster images
+- Responsive image sizes
+- Compressed videos
+- WebM where possible
+- MP4 fallback
+- Only preload hero video/image
+- Pause off-screen videos
+- Avoid loading every video on initial page load
+
+Do not allow animations to cause scrolling lag.
+
+Respect:
+
+prefers-reduced-motion
+
+and reduce animation for users who request reduced motion.
+
+--------------------------------------------------
+LOCAL DATA ARCHITECTURE
+--------------------------------------------------
+
+Because there is NO backend,
+all content should come from local TypeScript data.
+
+Example:
+
+projects.ts
+
+export const projects = [
+  {
+    id: 1,
+    title: "Project Name",
+    category: "Social Media Reel",
+    year: "2026",
+    type: "video",
+    thumbnail: "/assets/images/project-01.webp",
+    video: "/assets/videos/project-01.mp4",
+    role: "Video Editing / Color Grading"
+  }
+]
+
+Create similar data structures for:
+
+software.ts
+skills.ts
+categories.ts
+
+This makes the portfolio easy to maintain.
+
+--------------------------------------------------
+IMPORTANT
+--------------------------------------------------
+
+Do NOT create authentication.
+
+Do NOT create an API.
+
+Do NOT create a database.
+
+Do NOT create a backend.
+
+Do NOT create admin panels.
+
+Do NOT create CMS functionality.
+
+This is a STATIC SINGLE-PAGE CREATIVE PORTFOLIO.
+
+The only dynamic behavior should be frontend interactions,
+animations, videos, modals and scrolling.
+
+--------------------------------------------------
+FINAL EXPERIENCE
+--------------------------------------------------
+
+The final experience should feel like:
+
+A visitor meets the editor.
+
+↓
+Learns who he is.
+
+↓
+Understands what he specializes in.
+
+↓
+Discovers the tools he uses.
+
+↓
+Discovers the content he creates.
+
+↓
+Explores presentation videos.
+
+↓
+Explores motion graphics.
+
+↓
+Explores social media reels.
+
+↓
+Explores graphic design.
+
+↓
+Sees his strongest selected work.
+
+↓
+Watches the showreel.
+
+↓
+Contacts the editor.
+
+The entire website should feel like ONE CONTINUOUS STORY.
+
+Do not make it feel like a collection of unrelated sections.
+
+The final result should look like an award-winning creative portfolio
+rather than a standard resume website.
+
+structured version 
+
+
+        ┌───────────────────────┐
+        │                       │
+        │      EDITOR PHOTO     │
+        │                       │
+        │      NAME             │
+        │      VIDEO EDITOR     │
+        │      MOTION DESIGNER  │
+        │                       │
+        └───────────┬───────────┘
+                    │
+                  SCROLL
+                    ↓
+        ┌───────────────────────┐
+        │     WHO AM I?         │
+        │                       │
+        │     About             │
+        │     Experience        │
+        │     Numbers           │
+        └───────────┬───────────┘
+                    ↓
+        ┌───────────────────────┐
+        │      WHAT I DO        │
+        │                       │
+        │ Video Editing         │
+        │ Motion Graphics       │
+        │ Graphic Design        │
+        │ Color Grading         │
+        └───────────┬───────────┘
+                    ↓
+        ┌───────────────────────┐
+        │     MY TOOLKIT        │
+        │                       │
+        │ Premiere              │
+        │ After Effects         │
+        │ Photoshop             │
+        │ Illustrator           │
+        │ DaVinci               │
+        └───────────┬───────────┘
+                    ↓
+        ┌───────────────────────┐
+        │   CONTENT I CREATE    │
+        │                       │
+        │ Presentation Videos   │
+        │ Motion Graphics       │
+        │ Social Media Reels    │
+        │ Graphic Design        │
+        └───────────┬───────────┘
+                    ↓
+        ┌───────────────────────┐
+        │      MY WORK          │
+        │                       │
+        │   REELS               │
+        │   VIDEOS              │
+        │   GRAPHICS            │
+        │   MOTION              │
+        └───────────┬───────────┘
+                    ↓
+        ┌───────────────────────┐
+        │      SHOWREEL         │
+        │                       │
+        │   ▶ WATCH THE WORK   │
+        └───────────┬───────────┘
+                    ↓
+        ┌───────────────────────┐
+        │    LET'S CREATE       │
+        │                       │
+        │   CONTACT             │
+        └───────────────────────┘
