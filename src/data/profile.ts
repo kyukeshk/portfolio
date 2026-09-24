@@ -24,7 +24,7 @@ export const profileData: ProfileData = {
       label: "YEARS EXPERIENCE"
     },
     {
-      value: 100,
+      value: 500,
       suffix: "+",
       label: "VIDEOS COMPLETED"
     },
