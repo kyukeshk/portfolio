@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { softwareData } from '../../data/software';
 import { useCursor } from '../../context/CursorContext';
 import { ArrowRight } from 'lucide-react';
+import { SoftwareIcon } from '../common/SoftwareIcon';
 
 export const Software: React.FC = () => {
   const [hoveredTool, setHoveredTool] = useState<string | null>(null);
@@ -40,7 +41,7 @@ export const Software: React.FC = () => {
                 key={tool.id}
                 onMouseEnter={() => {
                   setHoveredTool(tool.id);
-                  setCursor('default', tool.shortName);
+                  setCursor('default', tool.name.toUpperCase());
                 }}
                 onMouseLeave={() => {
                   setHoveredTool(null);
@@ -51,15 +52,19 @@ export const Software: React.FC = () => {
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   {/* Left: Icon Badge & Name */}
                   <div className="flex items-center gap-5 sm:gap-8">
-                    {/* Tool Badge */}
+                    {/* Tool Application Icon Badge */}
                     <div
-                      className={`w-12 h-12 rounded-lg flex items-center justify-center font-display font-bold text-sm tracking-wider transition-all duration-300 ${
+                      className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center p-0.5 transition-all duration-300 ${
                         isHovered
-                          ? 'bg-[#111111] text-white scale-110 shadow-md'
-                          : 'bg-[#F0F0EB] text-[#111111]'
+                          ? 'scale-110 shadow-lg ring-2 ring-[#C65B5B]/30'
+                          : 'shadow-sm'
                       }`}
                     >
-                      {tool.shortName}
+                      <SoftwareIcon
+                        toolId={tool.id}
+                        name={tool.name}
+                        className="w-full h-full rounded-lg"
+                      />
                     </div>
 
                     <div>

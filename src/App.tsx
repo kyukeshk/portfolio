@@ -12,7 +12,7 @@ import { ContentCategories } from './components/sections/ContentCategories';
 import { PresentationVideos } from './components/sections/PresentationVideos';
 import { Reels } from './components/sections/Reels';
 import { MotionGraphics } from './components/sections/MotionGraphics';
-import { GraphicDesign } from './components/sections/GraphicDesign';
+import { AiVideoEditing } from './components/sections/AiVideoEditing';
 import { BeforeAfter } from './components/sections/BeforeAfter';
 import { Process } from './components/sections/Process';
 import { Showreel } from './components/sections/Showreel';
@@ -88,7 +88,7 @@ export const AppContent: React.FC = () => {
         />
         <Reels onSelectVideo={handleOpenVideo} />
         <MotionGraphics onSelectVideo={handleOpenVideo} />
-        <GraphicDesign />
+        <AiVideoEditing onSelectVideo={handleOpenVideo} />
         <BeforeAfter />
         <Process />
         {/* <SelectedWork

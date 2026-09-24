@@ -1,64 +1,64 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { ArrowDownRight } from 'lucide-react';
-import { useCursor } from '../../context/CursorContext';
-import { getAssetUrl } from '../../utils/assets';
+import React from 'react';
+// import { motion } from 'framer-motion';
+// import { ArrowDownRight } from 'lucide-react';
+// import { useCursor } from '../../context/CursorContext';
+// import { getAssetUrl } from '../../utils/assets';
 
-interface CategoryItem {
-  number: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  image: string;
-  tag: string;
-  anchor: string;
-}
+// interface CategoryItem {
+//   number: string;
+//   title: string;
+//   subtitle: string;
+//   description: string;
+//   image: string;
+//   tag: string;
+//   anchor: string;
+// }
 
-const categories: CategoryItem[] = [
-  {
-    number: "01",
-    title: "PRESENTATION VIDEOS",
-    subtitle: "Brand Keynotes & Product Launches",
-    description: "High-definition wide-screen keynote presentations, corporate anthems, and cinematic launch reels.",
-    image: "/assets/images/automotive_reel.jpg",
-    tag: "16:9 4K MASTERS",
-    anchor: "#presentation-videos"
-  },
-  {
-    number: "02",
-    title: "MOTION GRAPHICS",
-    subtitle: "Kinetic Identity & 3D Sequences",
-    description: "Refractive 3D animations, broadcast package title cards, and procedural motion typography.",
-    image: "/assets/images/motion_graphics.jpg",
-    tag: "2D / 3D COMPOSITING",
-    anchor: "#motion-graphics"
-  },
-  {
-    number: "03",
-    title: "SOCIAL MEDIA REELS",
-    subtitle: "High-Retention Vertical Storytelling",
-    description: "Fast-paced 9:16 vertical edits with retention hooks, sound design hits, and kinetic subtitles.",
-    image: "/assets/images/color_grade_after.jpg",
-    tag: "9:16 VERTICAL",
-    anchor: "#reels"
-  },
-  {
-    number: "04",
-    title: "GRAPHIC DESIGN",
-    subtitle: "Editorial Posters & Brand Key Art",
-    description: "Swiss-inspired typography, event collateral, social key art, and tactile photo manipulations.",
-    image: "/assets/images/poster_design.jpg",
-    tag: "KEY ART & POSTERS",
-    anchor: "#graphic-design"
-  }
-];
+// const categories: CategoryItem[] = [
+//   {
+//     number: "01",
+//     title: "PRESENTATION VIDEOS",
+//     subtitle: "Brand Keynotes & Product Launches",
+//     description: "High-definition wide-screen keynote presentations, corporate anthems, and cinematic launch reels.",
+//     image: "/assets/images/work_thumbnail.png",
+//     tag: "16:9 4K MASTERS",
+//     anchor: "#presentation-videos"
+//   },
+//   {
+//     number: "02",
+//     title: "TRADITIONAL VIDEO EDITING",
+//     subtitle: "Kinetic Identity & 3D Sequences",
+//     description: "Refractive 3D animations, broadcast package title cards, and procedural motion typography.",
+//     image: "/assets/images/traditional_sample.png",
+//     tag: "2D / 3D COMPOSITING",
+//     anchor: "#motion-graphics"
+//   },
+//   {
+//     number: "03",
+//     title: "SOCIAL MEDIA REELS",
+//     subtitle: "High-Retention Vertical Storytelling",
+//     description: "Fast-paced 9:16 vertical edits with retention hooks, sound design hits, and kinetic subtitles.",
+//     image: "/assets/images/reel_sample.png",
+//     tag: "9:16 VERTICAL",
+//     anchor: "#reels"
+//   },
+//   {
+//     number: "04",
+//     title: "AI VIDEO EDITING",
+//     subtitle: "Editorial Posters & Brand Key Art",
+//     description: "Swiss-inspired typography, event collateral, social key art, and tactile photo manipulations.",
+//     image: "/assets/images/ai_sample.png",
+//     tag: "KEY ART & POSTERS",
+//     anchor: "#graphic-design"
+//   }
+// ];
 
 export const ContentCategories: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const { setCursor, resetCursor } = useCursor();
+  // const [activeIndex, setActiveIndex] = useState(0);
+  // const { setCursor, resetCursor } = useCursor();
 
   return (
-    <section className="relative w-full py-28 md:py-36 px-6 md:px-12 bg-[#F7F7F5] editorial-border-t">
+    <section className="relative w-full py-10 md:py-5 px-6 md:px-12 bg-[#F7F7F5] editorial-border-t">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center justify-between mb-16 text-xs font-mono tracking-widest text-[#666666] uppercase">
@@ -79,9 +79,7 @@ export const ContentCategories: React.FC = () => {
           </p>
         </div>
 
-        {/* Interactive Showcase Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* Left: Category Nav Accordion */}
+        {/* <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           <div className="lg:col-span-6 flex flex-col justify-between space-y-3">
             {categories.map((cat, idx) => {
               const isActive = activeIndex === idx;
@@ -142,7 +140,6 @@ export const ContentCategories: React.FC = () => {
             })}
           </div>
 
-          {/* Right: Dynamic Visual Preview Card */}
           <div className="lg:col-span-6 relative min-h-[400px] lg:min-h-full rounded-lg overflow-hidden border border-[#E5E5E0] bg-black shadow-xl">
             <motion.img
               key={activeIndex}
@@ -164,7 +161,7 @@ export const ContentCategories: React.FC = () => {
               </h4>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

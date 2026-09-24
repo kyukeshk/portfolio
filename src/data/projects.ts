@@ -3,128 +3,136 @@ import { Project, ReelProject } from '../types/portfolio';
 export const presentationVideos: Project[] = [
   {
     id: "pres-01",
-    title: "NEO TOKYO: ARCHITECTURAL ESSENCE",
+    title: "SMART TAX: ITR MADE SIMPLE",
     category: "Presentation Video",
-    subCategory: "Keynote & Brand Film",
+    subCategory: "Tax & ITR Explainer",
     year: "2026",
     duration: "02:14",
-    role: "Lead Editor / Sound Design",
-    client: "Studio Kanso",
-    description: "An immersive brand keynote showcasing brutalist Japanese architecture, balanced pacing, and ambient sound design designed for high-resolution LED stage projection.",
+    role: "Lead Editor / Motion Design",
+    client: "FinTax Solutions",
+    description:
+      "A clear and engaging presentation video explaining income tax and ITR filing through clean motion graphics, step-by-step visuals, and simplified financial concepts designed to make tax-related information easy to understand.",
     thumbnail: "/assets/images/automotive_reel.jpg",
-    videoUrl: "/assets/videos/presentation-01.mp4",
+    videoUrl: "/assets/videos/Presentation_video_1.mp4",
     aspectRatio: "16:9",
-    tools: ["Premiere Pro", "DaVinci Resolve", "After Effects"]
+    tools: ["Premiere Pro", "After Effects", "Photoshop"]
   },
+
   {
     id: "pres-02",
-    title: "LUMINA: SOUND REINVENTED",
+    title: "NEXUS DISPLAY: EXPERIENCE THE SCREEN",
     category: "Presentation Video",
-    subCategory: "Product Launch Showcase",
+    subCategory: "Product Presentation",
     year: "2026",
     duration: "01:45",
     role: "Motion Design / Editing",
-    client: "Acoustic Labs",
-    description: "High-octane product launch video combining 3D product CAD animations with dynamic split-screens and rhythm-locked acoustic percussion.",
+    client: "Nexus Technologies",
+    description:
+      "A sleek product presentation showcasing an advanced display screen through detailed product shots, feature highlights, animated specifications, and smooth transitions designed to communicate the product experience with clarity and impact.",
     thumbnail: "/assets/images/motion_graphics.jpg",
-    videoUrl: "/assets/videos/presentation-02.mp4",
+    videoUrl: "/assets/videos/Presentation_video_2.mp4",
     aspectRatio: "16:9",
     tools: ["After Effects", "Premiere Pro", "Photoshop"]
   },
+
   {
     id: "pres-03",
-    title: "APEX HORIZON: ANNUAL VISION",
+    title: "LUMIÈRE: SKINCARE REDEFINED",
     category: "Presentation Video",
-    subCategory: "Investor Presentation",
+    subCategory: "Beauty Product Showcase",
     year: "2025",
     duration: "03:10",
-    role: "Visual Storyteller",
-    client: "Apex Ventures",
-    description: "Cinematic annual vision reel presenting company milestones through elegant infographic transitions, archival interview cuts, and orchestral crescendo.",
+    role: "Visual Storyteller / Editor",
+    client: "Lumière Skincare",
+    description:
+      "A premium skincare presentation introducing a face cream through elegant product visuals, ingredient-focused animations, soft transitions, and cinematic beauty shots that highlight the product's texture, experience, and brand identity.",
     thumbnail: "/assets/images/color_grade_after.jpg",
-    videoUrl: "/assets/videos/presentation-01.mp4",
+    videoUrl: "/assets/videos/Presentation_video_3.mp4",
     aspectRatio: "16:9",
-    tools: ["Premiere Pro", "After Effects"]
+    tools: ["Premiere Pro", "After Effects", "DaVinci Resolve"]
   }
 ];
 
 export const reelsData: ReelProject[] = [
   {
     id: "reel-01",
-    title: "CYBERPUNK CAR SPOT",
+    title: "TRIP GANG",
     views: "1.2M",
-    client: "Porsche Enthusiasts",
+    client: "Self Project",
     year: "2026",
     duration: "00:32",
     thumbnail: "/assets/images/automotive_reel.jpg",
-    videoUrl: "/assets/videos/reel-01.mp4",
-    tag: "AUTOMOTIVE / SPEED"
+    videoUrl: "/assets/videos/Reel_video_1.mp4",
+    tag: "TRIP / PLANNING"
   },
   {
     id: "reel-02",
-    title: "COLOR GRADE BREAKDOWN",
+    title: "MOTION ANIMATIONS",
     views: "850K",
-    client: "Cinema Craft",
+    client: "Self Project",
     year: "2026",
-    duration: "00:24",
+    duration: "00:19",
     thumbnail: "/assets/images/color_grade_after.jpg",
-    videoUrl: "/assets/videos/reel-02.mp4",
+    videoUrl: "/assets/videos/Reel_video_2.mp4",
     tag: "COLOR SCIENCE"
   },
   {
     id: "reel-03",
-    title: "KINETIC TYPOGRAPHY BEATS",
+    title: "EDITOR PROCESS",
     views: "430K",
-    client: "Indie Label",
+    client: "Self Project",
     year: "2026",
-    duration: "00:19",
+    duration: "00:15",
     thumbnail: "/assets/images/poster_design.jpg",
-    videoUrl: "/assets/videos/reel-01.mp4",
-    tag: "MOTION / TYPOGRAPHY"
+    videoUrl: "/assets/videos/Reel_video_3.mp4",
+    tag: "MOTION / ANIMATION"
   },
   {
     id: "reel-04",
-    title: "STUDIO ROUTINE & WORKFLOW",
+    title: "NATURAL REEL",
     views: "610K",
-    client: "Creator Spotlight",
+    client: "Self Project",
     year: "2025",
-    duration: "00:45",
+    duration: "00:21",
     thumbnail: "/assets/images/secondary_portrait.jpg",
-    videoUrl: "/assets/videos/reel-02.mp4",
-    tag: "BEHIND THE SCENES"
+    videoUrl: "/assets/videos/Reel_video_4.mp4",
+    tag: "FATHER LOVE"
   }
 ];
 
 export const motionGraphicsProjects: Project[] = [
   {
     id: "motion-01",
-    title: "PRISM: REFRACTED FUTURES",
+    title: "ETERNAL MOMENTS: A WEDDING STORY",
     category: "Motion Graphics",
-    subCategory: "3D Title Sequence",
+    subCategory: "Wedding Film & Transitions",
     year: "2026",
     duration: "00:48",
-    role: "3D Art Direction / Animation",
-    client: "CineMorph",
-    description: "An exploration of refractive caustics, chromatic aberration, and geometric typography floating in zero-gravity space.",
+    role: "Wedding Editor / Transition Design",
+    client: "Moments & Memories",
+    description:
+      "A cinematic wedding edit crafted with seamless transition effects, rhythmic cuts, elegant motion elements, and carefully timed music to transform memorable wedding moments into a visually engaging story.",
     thumbnail: "/assets/images/motion_graphics.jpg",
-    videoUrl: "/assets/videos/motion-01.mp4",
+    videoUrl: "/assets/videos/Traditional_video_1.mp4",
     aspectRatio: "16:9",
-    tools: ["After Effects", "Cinema 4D", "Photoshop"]
+    tools: ["Premiere Pro", "After Effects", "Photoshop"]
   },
+
   {
     id: "motion-02",
-    title: "VELOCITY HUD INTERFACE",
+    title: "TOGETHER: FAMILY MOMENTS",
     category: "Motion Graphics",
-    subCategory: "Sci-Fi UI & HUD",
+    subCategory: "Family Event Highlights",
     year: "2026",
     duration: "01:05",
-    role: "FUI Designer / Compositor",
-    client: "Orbit Digital",
-    description: "Intricate futuristic heads-up display graphics with animated data telemetry, vector maps, and holographic user interfaces.",
+    role: "Event Editor / Visual Storyteller",
+    client: "Moments & Memories",
+    description:
+      "A warm family function highlight capturing candid interactions, celebrations, laughter, and memorable moments through smooth transitions, emotional pacing, and cinematic storytelling.",
     thumbnail: "/assets/images/automotive_reel.jpg",
-    videoUrl: "/assets/videos/presentation-01.mp4",
+    videoUrl: "/assets/videos/Traditional_video_2.mp4",
     aspectRatio: "16:9",
-    tools: ["Illustrator", "After Effects"]
+    tools: ["Premiere Pro", "After Effects"]
   }
 ];
 
@@ -197,9 +205,9 @@ export const selectedWorks: Project[] = [
 
 export const showreelData = {
   title: "WATCH THE WORK.",
-  duration: "01:24",
+  duration: "02:45",
   year: "2026",
-  tagline: "A collection of editorial highlights, motion sequences, and cinematic frames from 2024 to 2026.",
-  videoUrl: "/assets/videos/showreel.mp4",
-  poster: "/assets/images/automotive_reel.jpg"
+  tagline: "A clear and engaging presentation video explaining income tax and ITR filing through clean motion graphics, step-by-step visuals, and simplified financial concepts designed to make tax-related information easy to understand.",
+  videoUrl: "/assets/videos/Presentation_video_1.mp4",
+  poster: "/assets/images/work_thumbnail.png"
 };

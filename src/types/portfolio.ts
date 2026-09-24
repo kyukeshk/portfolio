@@ -38,6 +38,21 @@ export interface GraphicDesignItem {
   client?: string;
 }
 
+export interface AiVideoItem {
+  id: string;
+  title: string;
+  category: string;
+  year: string;
+  videoUrl: string;
+  thumbnail?: string;
+  aspect?: 'portrait' | 'landscape' | 'square' | 'tall';
+  duration?: string;
+  description: string;
+  client?: string;
+  tools?: string[];
+  prompt?: string;
+}
+
 export interface SoftwareTool {
   id: string;
   name: string;

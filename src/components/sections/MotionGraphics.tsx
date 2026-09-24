@@ -140,10 +140,10 @@ export const MotionGraphics: React.FC<MotionGraphicsProps> = ({ onSelectVideo })
         {/* Heading */}
         <div className="mb-14">
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-display font-bold uppercase tracking-tight text-[#111111]">
-            MOTION GRAPHICS & 3D
+            TRADITIONAL VIDEO EDITING
           </h2>
           <p className="text-sm font-mono text-[#666666] mt-2 uppercase tracking-wider">
-            Refractive typography, geometric 3D animation & kinetic HUD design
+            Cinematic video editing, Color Grading & Color Correction
           </p>
         </div>
 
